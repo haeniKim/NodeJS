@@ -1,6 +1,16 @@
 {
   "packageManager": "yarn@4.2.2",
-  "dependencies": {
+  "name": "node",
+  "version": "1.0.0",
+  "description": "Complete Node.js Guide (Udemy)",
+  "main": "app.js",
+  "devDependencies": {
     "nodemon": "^3.1.1"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "haeni",
+  "license": "ISC"
 }
