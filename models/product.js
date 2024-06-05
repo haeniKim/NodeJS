@@ -28,9 +28,13 @@ const getProductsFromFile = (cb) => {
 // const products = []; -> 이제 배열 대신 파일에 데이터 저장
 
 module.exports = class Product {
-  constructor(t) {
+  constructor(title, imageUrl, description, price) {
+    // controller에서 순서 잘 맞추기
     // 생성자 함수
-    this.title = t;
+    this.title = title;
+    this.imageUrl = imageUrl;
+    this.description = description;
+    this.price = price;
   }
 
   save() {
